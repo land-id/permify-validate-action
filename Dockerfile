@@ -1,4 +1,4 @@
-FROM ghcr.io/permify/permify:latest as base
+FROM ghcr.io/permify/permify:v1.2.2 as base
 
 FROM ubuntu:22.04
 COPY --from=base /usr/local/bin/permify /permify
